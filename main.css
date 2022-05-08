@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#videos{
+    display: flex;
+    gap:1em;
+}
+
+.vid{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-player{
+    background-color: black;
+    width: 100%;
+    height: 450px;
+}
+
+#user-2{
+    display:none;
+}
+
+#controls{
+    display:flex;
+    justify-content:center;
+}
+
+.control-container{
+    padding:10px;
+    margin:10px;
+    border:1px solid black;
+    background-color: cyan;
+}

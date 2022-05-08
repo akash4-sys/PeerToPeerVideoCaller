@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VideoCaller</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="videos">
+            <div class="vid">
+                <video class="video-player" id="user-1" autoplay playsinline></video>
+                <div>user-1</div>
+            </div class="vid">
+            <div>
+                <video class="video-player" id="user-2" autoplay playsinline></video>
+                <div>user-2</div>
+            </div>
+        </div>
+        <div id="controls">
+            <div class="control-container" id="camera">Camera</div>
+            <div class="control-container" id="mic">Voice</div>
+            <a class="control-container" id="leave" href="lobby.html">Leave</a>
+        </div>
+    </body>
+    <script src="agora-rtm-sdk-1.4.4.js" async defer></script>
+    <script src="main.js" async defer></script>
+</html>

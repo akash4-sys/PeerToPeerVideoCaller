@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VideoCaller</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="" id="join-form">
+            <input type="text" name="invite_link" required />
+            <input type="submit" value="Join Room">
+        </form>
+    </body>
+    <script>
+        let form = document.getElementById('join-form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let inviteCode = e.target.invite_link.value;
+            window.location = `index.html?room=${inviteCode}`
+        })
+    </script>
+</html>
